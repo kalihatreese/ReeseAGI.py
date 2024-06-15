@@ -1,0 +1,16 @@
+from ReeseAGI import SuperIntelligence
+
+# Create an instance of SuperIntelligence
+si = SuperIntelligence(CognitiveArchitecture())
+
+# Example usage
+input_data = {
+    'entities': [
+        {'id': 'AAPL', 'properties': ['high', 'low', 'close'], 'relationships': [{'id': '1', 'type': 'causes', 'target': 'buy'}]}
+    ],
+    'outcome': 'profit'
+}
+
+decision = si.process_input(input_data)
+print(f"Decision: {decision}")
+print(f"Accuracy: {si.get_accuracy():.2f}")
