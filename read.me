@@ -19,5 +19,49 @@ No installation is required; simply import `ReeseAGI.py` into your Python enviro
 ```python
 from ReeseAGI import SuperIntelligence
 
+Instantiate SuperIntelligence from ReeseAGI.py and utilize its methods to process input data, make decisions, and evaluate performance.from ReeseAGI import SuperIntelligence
+
+# Create an instance of SuperIntelligence
+si = SuperIntelligence()
+
+# Example usage
+input_data = {
+    'entities': [
+        {'id': 'AAPL', 'properties': ['high', 'low', 'close'], 'relationships': [{'id': '1', 'type': 'causes', 'target': 'buy'}]}
+    ],
+    'outcome': 'profit'
+}
+
+decision = si.process_input(input_data)
+print(f"Decision: {decision}")
+print(f"Accuracy: {si.get_accuracy():.2f}")
+
 ContributionFeel free to fork this repository, submit issues, or create pull requests. Contributions are welcome!LicenseThis module is licensed under the MIT License. See LICENSE file for more details.Copyright Notice# Copyright (c) 2024 Jonathan Reese, Reeselimitedllc
 # All rights reserved.Trademark NoticeReeseAGI is a trademark of Jonathan Reese, Reeselimitedllc. Unauthorized use is strictly prohibited.Contact InformationOwner: Jonathan ReeseCompany: ReeselimitedllcWebsite: www.reeselimitedllc.com Email: kalihatreese@gmail.com
+
+### LICENSE
+
+Include a simple MIT License file (LICENSE):
+
+```plaintext
+MIT License
+
+Copyright (c) 2024 Jonathan Reese, Reeselimitedllc
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
