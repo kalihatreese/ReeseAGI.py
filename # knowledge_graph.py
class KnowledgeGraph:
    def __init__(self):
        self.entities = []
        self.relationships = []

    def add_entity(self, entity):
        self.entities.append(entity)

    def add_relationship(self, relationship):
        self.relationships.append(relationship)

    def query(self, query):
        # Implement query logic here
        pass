@@ -1,0 +1,15 @@
+# knowledge_graph.py
+class KnowledgeGraph:
+    def __init__(self):
+        self.entities = []
+        self.relationships = []
+
+    def add_entity(self, entity):
+        self.entities.append(entity)
+
+    def add_relationship(self, relationship):
+        self.relationships.append(relationship)
+
+    def query(self, query):
+        # Implement query logic here
+        pass
